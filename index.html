@@ -36,7 +36,7 @@
     <!-- Header section end -->
     <!-- Hero section -->
     <section class="hero-section">
-      <div class="hero-slider owl-carousel">
+      <div id="search" class="hero-slider owl-carousel">
         <div class="hs-item">
           <div class="container">
             <div class="row">
@@ -44,15 +44,18 @@
                 <div class="hs-text">
                   <h2><span>Music</span> from Tweets.</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida.
+                    Hear your tweets, in a musical form. May be you will be
+                    surprised to see and hear what your tweets got to say in
+                    music!!
                   </p>
-                  <a href="#" class="site-btn">Search</a>
+                  <a href="#results" class="site-btn" onclick="handleClick()"
+                    >Search</a
+                  >
                   <input
                     class="user-input"
                     type="text"
                     placeholder="@username"
+                    onkeyup="handleKeyPress(this)"
                   />
                 </div>
               </div>
@@ -76,20 +79,17 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="section-title">
-              <h2>Unlimited Access to 100K tracks</h2>
+              <h2>MOTIVE</h2>
             </div>
           </div>
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum sus-pendisse ultrices gravida. Risus commodo viverra
-              maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-              gravida.
+              The main motive is to make something out of fun and learning.
+              Applying some musical minds to out daily tweets. There are many
+              things happening around so we chose to add some instruments to the
+              daily tweets and give you a change to hear them in a symphony.
             </p>
-            <a href="#" class="site-btn">Try it now</a>
+            <a href="#search" class="site-btn">Try it now</a>
           </div>
         </div>
       </div>
@@ -110,11 +110,11 @@
                   alt=""
                 />
               </div>
-              <h4>Create an account</h4>
+              <h4>Creating API</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipi-scing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum sus-pendisse ultrices gravida.
+                We developed an API to fetch the tweets from an user after when
+                it is given as an input. This will will get the first three
+                tweets of the user.
               </p>
             </div>
           </div>
@@ -126,11 +126,11 @@
                   alt=""
                 />
               </div>
-              <h4>Choose a plan</h4>
+              <h4>Attaching with Database</h4>
               <p>
-                Donec in sodales dui, a blandit nunc. Pellen-tesque id eros
-                venenatis, sollicitudin neque sodales, vehicula nibh. Nam massa
-                odio, portti-tor vitae efficitur non.
+                Once we get the tweets we attach them to the database in the
+                backend. This create a connectivity with the music notes of the
+                characters from the tweets.
               </p>
             </div>
           </div>
@@ -142,40 +142,26 @@
                   alt=""
                 />
               </div>
-              <h4>Download Music</h4>
+              <h4>Listen to the Music</h4>
               <p>
-                Ablandit nunc. Pellentesque id eros venenatis, sollicitudin
-                neque sodales, vehicula nibh. Nam massa odio, porttitor vitae
-                efficitur non, ultric-ies volutpat tellus.
+                You can finally hera the music of the tweet. We give you options
+                to choose which instrument you want to listen to. This creates a
+                fun and interactive mindset between user and the website.
               </p>
             </div>
           </div>
         </div>
       </div>
-	</section>
-	<section class="intro-section spad">
-		<div class="user_data">
-			<h1>Tweets!!</h1>
-		</div>
-		<hr>
-		<div class="container tweet_container">
-		  <div class="row">
-			<div class="col-lg-6">
-			  <div class="section-title">
-				<h2 class="user_name">User-Name</h2>
-			  </div>
-			</div>
-			<div class="col-lg-6">
-			  <p class="user_tweet">
-				Tweet
-			  </p>
-			  <button>Guitar</button>
-			  <button>Guitar</button>
-			  <button>Guitar</button>
-			</div>
-		  </div>
-		</div>
-	  </section>
+    </section>
+    <section id="results" class="intro-section spad">
+      <div class="user_data">
+        <h1>Tweets!!</h1>
+      </div>
+      <hr />
+      <div class="container tweet_container">
+        
+      </div>
+    </section>
     <!-- Footer section -->
     <footer class="footer-section">
       <div class="container">
@@ -201,8 +187,11 @@
     <script>
       eval(mod_pagespeed_pCwMCSN3pf);
     </script>
+
     <script src="js/owl.carousel.min.js.pagespeed.jm.iD9BtIsBTL.js"></script>
+
     <script src="js/mixitup.min.js.pagespeed.jm.OUnzG6FErC.js"></script>
+
     <script>
       //<![CDATA[
       "use strict";
@@ -254,8 +243,8 @@
       }
       gtag("js", new Date());
       gtag("config", "UA-23581568-13");
-	</script>
-	<script src="./js/app.js"></script>
+    </script>
+    <script src="./js/app.js"></script>
   </body>
 
   <!-- Mirrored from preview.colorlib.com/theme/solmusic/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Nov 2020 09:31:31 GMT -->
