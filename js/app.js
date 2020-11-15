@@ -1,5 +1,5 @@
 const api = 'https://tweetifybeats.herokuapp.com/'
-
+const local="http://localhost:5000/"
 
 
 
@@ -16,7 +16,7 @@ function getResult(username){
     // if(e.keyCode == 13){
         console.log('hello');
         // alert('hello')
-        fetch(`${api}${username}`).then(response => response.json()).then(dataDisplay)    ;
+        fetch(`${local}${username}`).then(response => response.json()).then(dataDisplay)    ;
     }
 // }
 
@@ -43,9 +43,9 @@ function dataDisplay (res){
                   <p class="user_tweet">
                     ${res[i]}
                   </p>
-                  <button>Guitar</button>
-                  <button>Piano</button>
-                  <button>Xylophone</button>
+                  <button onclick="fetch('${local}${username}'+'/'+${i}+'/guitar');">Guitar</button>
+                  <button onclick="fetch('${local}${username}'+'/'+${i}+'/piano');">Piano</button>
+                  <button onclick="fetch('${local}${username}'+'/'+${i}+'/xylophone');">Xylophone</button>
                 </div>`
                 node.appendChild(list)
     }
