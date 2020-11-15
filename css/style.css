@@ -228,8 +228,8 @@ Header section
 
 .site-logo {
 	display: inline-block;
-	padding: 0;
-	padding: 44px 15px;
+	padding: 0 !important;
+	width: 10%;
 }
 
 .header-right {
@@ -381,6 +381,10 @@ Hero section
 	top: 50px;
 	margin-bottom: 20px;
 	opacity: 0;
+}
+
+.hs-item .user-input{
+	padding: 2%;
 }
 
 .hs-item .sb-c2 {
@@ -1517,6 +1521,10 @@ Responsive
 	.footer-widget {
 		margin-bottom: 40px;
 	}
+.logo img{
+	width: 100px !important;
+}
+
 	.category-section .section-title,
 	.playlist-section .section-title {
 		float: none;
@@ -1812,4 +1820,20 @@ Responsive
 		position: relative;
 		margin-top: 20px;
 	}
+}
+
+
+
+.intro-section .user_data{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3%;
+}
+
+.intro-section button{
+	background-color: #fc0254;
+	padding:15px 10px;
+	border-radius: 5px;
+	color: white;
+	font-weight:600 ;
 }
