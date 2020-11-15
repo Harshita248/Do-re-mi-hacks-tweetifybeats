@@ -16,7 +16,7 @@ function getResult(username){
     // if(e.keyCode == 13){
         console.log('hello');
         // alert('hello')
-        fetch(`${local}${username}`).then(response => response.json()).then(dataDisplay)    ;
+        fetch(`${api}${username}`).then(response => response.json()).then(dataDisplay)    ;
     }
 // }
 
